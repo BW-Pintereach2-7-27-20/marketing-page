@@ -1,0 +1,168 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* CSS coding for the desktop first starts hear 
+This is for @media = 1000px-977px  */
+
+*{
+    background-color: lavenderblush;
+    font-family: 'Dancing Script', cursive;
+}
+h1{
+    font-weight: bolder;
+    font-size: 5.5rem;
+    color:orange;
+}
+header {
+    display:flex;
+    justify-content: space-around;
+    font-family: 'Dancing Script', cursive;
+}
+header nav{
+    margin-left: 120px;
+    margin-top: 60px;
+}
+header nav a{
+    font-size: 1.7rem;
+    padding : 0 10px;
+    text-decoration: none;
+    color: red;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 30px;
+    color:coral;
+    font-family: 'Dancing Script', cursive;
+}
+ form{
+    margin-top:50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+}
+form label{
+  
+    font-size: 1.8rem;
+    color:rgb(189, 119, 58);
+}
+#email{
+    border:2px solid plum;
+    width:60%;
+    height:30px;
+    margin-top: 20px;
+}
+#subject{
+    border:2px solid plum;
+    width:50%;
+    height:30px;
+    margin-top: 20px;
+}
+#description{
+    border:2px solid plum;
+    width:100%;
+    height:180px;
+    margin-top: 20px;
+}
+#submit{
+    border:1px solid plum;
+    border-radius: 20px;
+    background-color: plum;
+    color:purple;
+    width:150px;
+    height:60px;
+    font-size: 1.7rem;
+}
+#submit:hover{
+    background: rosybrown;
+    color:thistle;
+}
+footer {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+footer nav{
+    margin-top: 50px; 
+    margin-bottom: 20px;
+}
+footer nav a{
+    font-size: 1.7rem;
+     margin : 0 20px; 
+    text-decoration: none;
+    color: red;
+}
+ nav a:hover{
+    color: indianred;
+}
+.copyright{
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align:center;
+    margin-top: 20px;
+    color:salmon;
+}
+
+/* Here is the code for @media 800px-776px */
+@media(max-width : 800px){
+    h1{
+        font-size: 5rem;
+    }
+    header nav{
+        margin-left: -10px;
+       margin-top: 50px;
+    }
+    #submit{
+        height:30px;
+        font-size: 20px;
+        width:100px;
+    }
+}
+
+/* Here is the code for @media 500px-713px */
+@media(max-width : 500px){
+    h1{
+        font-size: 4rem;
+        margin-bottom: -10px;
+    }
+    header {
+        flex-flow: column wrap;
+        text-align: center;
+        width:700px;
+    }
+    header nav a{
+        font-size: 20px;
+       padding : 0 40px;
+    }
+    h2{
+        margin-left: 200px;
+        font-size: 2.3rem;
+    }
+    form{
+        width:713px;
+    }
+    
+    footer{
+        width:700px;
+        margin:20px;
+    }
+}
