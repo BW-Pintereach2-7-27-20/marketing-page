@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* CSS coding for the desktop first starts hear 
+This is for @media = 1000px-977px  */
+
+*{
+    background-color: lavenderblush;
+}
+h1{
+    font-weight: bolder;
+    font-size: 5.5rem;
+    color:orange;
+    font-family: 'Dancing Script', cursive;
+}
+header {
+    display:flex;
+    justify-content: space-around;
+    font-family: 'Dancing Script', cursive;
+}
+header nav{
+    margin-left: 120px;
+    margin-top: 60px;
+}
+header nav a{
+    font-size: 1.7rem;
+    padding : 0 10px;
+    text-decoration: none;
+    color: red;
+}
+.info h2{
+    border-radius: 30px;
+    background-image: url("aboutimg.png");
+    background-size: 100%;
+    width:100%;
+    height:300px;    
+    font-size:3rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color:coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ p{
+    text-align: center;
+    padding:25px;
+    font-size: 30px;
+    color:palevioletred;
+    font-family: 'Dancing Script', cursive;
+}
+.doesApp img{
+    width:100%;
+}
+.doesApp h2{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2.5rem;
+    color:coral;
+    font-family: 'Dancing Script', cursive;
+}
+.contact{
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Dancing Script', cursive;
+}
+.contact a{
+    border:1px solid plum;
+    background:plum;
+    border-radius: 20px;
+   text-decoration: none;
+   padding:20px;
+    font-size: 1.7rem;
+    color: purple;
+}
+.contact a:hover{
+    background: rosybrown;
+    color:thistle;
+}
+footer {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+footer nav{
+    margin-top: 50px; 
+    margin-bottom: 20px;
+}
+footer nav a{
+    font-size: 1.7rem;
+     margin : 0 20px; 
+    text-decoration: none;
+    color: red;
+}
+ nav a:hover{
+    color: indianred;
+}
+.copyright{
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align:center;
+    margin-top: 20px;
+    color:salmon;
+}
+
+/* Here is the code starting for @media 800px-776px */
+@media(max-width:800px){
+    h1{
+        font-size: 5rem;
+    }
+    header nav{
+        margin-left: -10px;
+       margin-top: 50px;
+    }
+}
+
+/*Here is the code for @media 500px-713px */
+@media(max-width : 500px){
+    h1{
+        font-size: 4rem;
+        margin-bottom: -30px;
+    }
+    header {
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    header nav{
+        margin-bottom: 20px;
+    }
+    header nav a{
+        font-size: 20px;
+       padding : 0 40px;
+    }
+    h2{
+        font-size: 2.3rem;
+    }
+    .who img{
+        width:100%;
+    }
+    footer{
+        margin:20px;
+    }
+}
