@@ -95,6 +95,24 @@ margin: 20px 0;
  #githubmanuel:hover{
      width:15%;
  }
+ .contact{
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Dancing Script', cursive;
+}
+.contact a{
+    border:1px solid plum;
+    background:plum;
+    border-radius: 20px;
+   text-decoration: none;
+   padding:20px;
+    font-size: 1.7rem;
+    color: purple;
+}
+.contact a:hover{
+    background: rosybrown;
+    color:thistle;
+}
 footer {
     text-align: center;
     font-family: 'Dancing Script', cursive;
